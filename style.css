@@ -1,36 +1,30 @@
-.bicicleta {
-  height: 600px;
-  background-color: black;
-  background-image: url("./bicicleta.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center top;
-  /* Escreve por cima do definido anteriormente */
-  /* background: url("./img/bicicleta.jpg"); */
-  display: flex;
-}
-
-.bicicleta h1 {
-  margin: auto;
-  background: white;
+a {
+  display: inline-block;
   padding: 1rem 2rem;
+  font-size: 1.5rem;
+  font-family: Arial;
+  text-decoration: none;
+  background: #caf;
+  color: #217;
+  transition: 0.5s;
 }
 
-.pattern {
-  height: 200px;
-  background-image: url("./pattern.svg");
-  background-size: 100px;
-  background-repeat: repeat; /* valor padrão */
+a:hover {
+  background: #adf;
+  color: #147;
 }
 
-div {
-  height: 200px;
+a:focus {
+  background: #cfa;
+  color: #371;
 }
 
-.linear {
-  background-image: linear-gradient(to right, #009638, #f6d800, #062672);
+a:active {
+  background: #ffa;
+  color: #761;
 }
 
-.radial {
-  background-image: radial-gradient(circle, #009638, #f6d800, #062672);
-}
+/* a:visited {
+  background: #fda;
+  color: #731;
+} */
