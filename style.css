@@ -1,38 +1,23 @@
-/* primeiro elemento */
-.lista-1 li:first-child {
+h1::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 4px;
   background: #caf;
 }
 
-/* último elemento */
-.lista-1 li:last-child {
-  background: #cfa;
+li {
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
 }
-
-/* terceiro elemento */
-.lista-1 li:nth-child(3) {
-  background: #fda;
-}
-
-/* elementos ímpares */
-.lista-2 li:nth-child(odd) {
-  background: #cfa;
-}
-
-/* elementos pares */
-.lista-2 li:nth-child(even) {
-  background: #adf;
-}
-
-/* de 4 em 4 */
-.lista-2 li:nth-child(4n) {
-  background: #caf;
-}
-/* todos menos first-child e last-child */
-ol li:not(:first-child, :last-child) {
-  background: #adf;
-}
-
-/* todos h2's dentro de section, menos o que tiver a classe .contato */
-section h2:not(.contato) {
-  text-decoration: underline;
+li::before {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-image: linear-gradient(#caf, #fff);
+  border: 2px solid #caf;
+  margin-right: 10px;
 }
